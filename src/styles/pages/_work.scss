@@ -215,6 +215,16 @@
         gap: 16px;
     }
 
+    > button {
+        appearance: none;
+        border: 0;
+        padding: 0;
+        background: none;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+    }
+
     div {
         display: flex;
         justify-content: center;
@@ -247,6 +257,7 @@
         &.copy {
             background: $gray;
             border: solid 2px $gray;
+            color: $white;
             &:hover {
                 color: $gray;
             }

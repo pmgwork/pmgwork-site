@@ -6,33 +6,32 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "preview:worker": "bunx --bun --no-install wrangler dev",
+    "deploy": "bun run build && bunx --bun --no-install wrangler deploy",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.3.0",
+    "@astrojs/react": "^7.0.0",
     "@iconify-json/tabler": "^1.2.22",
-    "@rive-app/canvas": "^2.31.2",
     "@rive-app/react-canvas": "^4.23.1",
     "@swup/body-class-plugin": "^3.3.0",
     "@swup/head-plugin": "^2.3.1",
     "@swup/scripts-plugin": "^2.1.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.2.0",
-    "astro": "^5.13.2",
+    "astro": "^7.3.4",
     "astro-icon": "^1.1.5",
     "graphql-request": "^7.2.0",
     "gsap": "^3.13.0",
-    "lenis": "^1.2.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sanitize-html": "^2.17.0",
     "swup": "^4.8.2"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.5.1",
+    "@astrojs/sitemap": "^3.7.4",
     "@types/sanitize-html": "^2.16.0",
-    "sass": "^1.90.0"
+    "sass": "^1.90.0",
+    "wrangler": "^4.0.0"
   }
 }
