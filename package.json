@@ -2,12 +2,13 @@
   "name": "pmgwork-site",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@12.6.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "preview:worker": "bunx --bun --no-install wrangler dev",
-    "deploy": "bun run build && bunx --bun --no-install wrangler deploy",
+    "preview:worker": "wrangler dev",
+    "deploy": "pnpm run build && wrangler deploy",
     "astro": "astro"
   },
   "dependencies": {
